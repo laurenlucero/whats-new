@@ -1,12 +1,25 @@
 import React from 'react';
+import NewsArticle from '../NewsArticle/NewsArticle'
 import './NewsContainer.css'
-import { NewsArticle } from '../NewsArticle/NewsArticle'
 
 // NEWSCONTAINER COMPONENT CODE GOES HERE
 
-export const NewsContainer = () => {
+const NewsContainer = ({news}) => {
+    const newsArticles = news.map(data => {
+        return (
+            <NewsArticle 
+                img={data.img}
+                headline={data.headline}
+                description={data.description}
+                url={data.url}
+                key={data.id}
+            />
+        )
+    })
     return (
-    <NewsArticle />
+    <section className="news-container">
+    {newsArticles}
+    </section>
     )
 }
 

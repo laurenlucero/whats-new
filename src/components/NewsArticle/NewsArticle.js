@@ -3,18 +3,17 @@ import './NewsArticle.css';
 
 // NEWSARTICLE COMPONENT CODE GOES HERE
 
-export class NewsArticle extends React.Component {
-    render() {
-        return (
-            <div style={{color: "white"}}>Hello World!</div>
+export const NewsArticle = ({ img, headline, description, url, id }) => {
+    return (
+        <article className='news-article'>
+            <img className='article-image' src={img} alt={headline} />
+                <h2>{headline}</h2>
+                <p>{description}</p>
+            <a href={url} target='_blank' rel='noreferrer noopener'>
+            <button className='read-article-btn'>Read Article</button>
+            </a>
+        </article>
         )
     }
-}
-
-// export const NewsArticle = () => {
-//     return (
-//         <div style={{ color: "white" }}>Hello World!</div> 
-//     )
-// }
 
 export default NewsArticle;
