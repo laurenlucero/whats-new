@@ -25,6 +25,4 @@ describe('NewsArticle', () => {
         expect(getByText("Read Article")).toBeInTheDocument();
         fireEvent.click(getByText("Read Article"));
     })
-
-// test the anchor tag button
 })
