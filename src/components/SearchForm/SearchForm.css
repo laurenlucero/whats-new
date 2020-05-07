@@ -1,7 +1,18 @@
+form {
+    padding: .25em;
+}
+
 input {
-    padding: .5em;
+    padding: .6em;
+    margin-right: .2em;
+        border: 1px solid #727274;
+        border-radius: 1px;
 }
 
 ::placeholder {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+label {
+ padding-right: .25em;
 }

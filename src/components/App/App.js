@@ -38,18 +38,16 @@ class App extends Component {
         news.headline.toLowerCase().includes(searchInput))
     })
     this.setState({topicSelected: results})
-    console.log(results);
-    
   }
 
   render () {
     return (
       <main className="app">
       <h1>What's <span className='highlight'>New?</span></h1>
-        <Menu filterTopics={this.filterTopics} newsData={this.state.data} />
         <SearchForm searchNews={this.searchNews} />
+         {!this.searchNews && <p>No articles found. Select a topic or search again!</p>}
+        <Menu filterTopics={this.filterTopics} newsData={this.state.data} />
         <NewsContainer news={this.state.topicSelected} />
-        {!this.results && <h3>No articles match your search. Try again!</h3>}
       </main>
     );
   }
