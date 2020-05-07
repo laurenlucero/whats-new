@@ -16,7 +16,6 @@ handleChange = e => {
 
 handleSearch = e => {
     e.preventDefault()
-
     this.props.searchNews(this.state.searchInput.toLowerCase())
     this.clearInput()
 }
