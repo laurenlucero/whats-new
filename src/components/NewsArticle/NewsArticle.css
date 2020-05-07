@@ -1,16 +1,18 @@
 .news-article {
     box-sizing: border-box;
     border: 1px solid #727274;
+    border-radius: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: center;
-    width: 50vw;
+    justify-content: space-between;
+    width: 49vw;
+    margin: .1em;
 }
 
 .article-image {
-    width: 50%;
+    width: 100%;
 }
 
 .read-article-btn {
@@ -21,9 +23,9 @@
     border-radius: 1px;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
+    margin: .2em;
 }
 
-/* 
-yellow #FCF673 
-purple #7379FC
-*/
+button:hover {
+    background: #FCF673;
+}

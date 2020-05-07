@@ -1,6 +1,7 @@
 .news-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 @media (min-width: 600px) {

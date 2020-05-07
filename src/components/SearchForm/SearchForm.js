@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './SearchForm.css';
 
-// SEARCHFORM COMPONENT CODE GOES HERE
 class SearchForm extends Component {
     constructor() {
         super()

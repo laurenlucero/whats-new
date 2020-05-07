@@ -11,4 +11,13 @@ button {
     border-radius: 1px;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
+     margin: .2em;
+}
+
+button:hover {
+    background: #FCF673;
+}
+
+button:active {
+    background: #FCF673;
 }

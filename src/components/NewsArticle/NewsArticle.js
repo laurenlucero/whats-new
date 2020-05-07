@@ -1,8 +1,6 @@
 import React from 'react';
 import './NewsArticle.css';
 
-// NEWSARTICLE COMPONENT CODE GOES HERE
-
 const NewsArticle = ({ img, headline, description, url, id }) => {
     return (
         <article className='news-article'>
