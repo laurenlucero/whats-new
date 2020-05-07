@@ -1,6 +1,6 @@
 import React from 'react';
 import NewsArticle from './NewsArticle';
-import {render} from '@testing-library/react';
+import {render, fireEvent} from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 describe('NewsArticle', () => {
@@ -13,7 +13,7 @@ describe('NewsArticle', () => {
    }
 
    it('should display information', () => {
-    const { getByText, getByAltText, fireEvent } = render( < NewsArticle img = {mockData.img}
+    const { getByText, getByAltText } = render( < NewsArticle img = {mockData.img}
             headline = {mockData.headline}
             description = {mockData.description}
             url = {mockData.url}
@@ -23,7 +23,7 @@ describe('NewsArticle', () => {
         expect(getByText('The Who postpones Denver Concert at the Pepsi Center')).toBeInTheDocument();
         expect(getByText('Classic-rock band The Who has postponed its Denver concert, set for Sunday, Sept. 29, after an illness robbed singer Roger Daltrey of his voice, the band said on Twitter.')).toBeInTheDocument();
         expect(getByText("Read Article")).toBeInTheDocument();
-        // fireEvent.click(getByText("Read Article"));
+        fireEvent.click(getByText("Read Article"));
     })
 
 // test the anchor tag button
