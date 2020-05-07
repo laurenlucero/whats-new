@@ -4,7 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    width: 50vw;
 }
 
 .article-image {
@@ -13,7 +15,7 @@
 
 .read-article-btn {
     padding: .5em;
-    color: #E2E2E4;
+    color: #141527;
     background: #7379FC;
     border: 1px solid #727274;
     border-radius: 1px;
