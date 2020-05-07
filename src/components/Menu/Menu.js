@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import './Menu.css'
 
 class Menu extends Component {
@@ -24,5 +25,10 @@ class Menu extends Component {
     )
     }
 }
+
+Menu.propTypes = {
+  filterNews: PropTypes.func,
+  topicTitle: PropTypes.string
+};
 
 export default Menu;
