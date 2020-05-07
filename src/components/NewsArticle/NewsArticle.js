@@ -3,7 +3,7 @@ import './NewsArticle.css';
 
 // NEWSARTICLE COMPONENT CODE GOES HERE
 
-export const NewsArticle = ({ img, headline, description, url, id }) => {
+const NewsArticle = ({ img, headline, description, url, id }) => {
     return (
         <article className='news-article'>
             <img className='article-image' src={img} alt={headline} />
