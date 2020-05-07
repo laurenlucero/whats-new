@@ -31,10 +31,13 @@ class App extends Component {
   }
 
   searchNews = (searchInput) => {
-    const results = this.state[this.state.topicTitle].filter(news => {
-      return (news.description.toLowerCase().includes(searchInput) || news.headline.toLowerCase().includes(searchInput))
+    const results = this.state[this.state.topicTitle]
+    .filter(news => {
+      return (
+        news.description.toLowerCase().includes(searchInput) ||
+        news.headline.toLowerCase().includes(searchInput))
     })
-    this.setState({selectedTopic: results})
+    this.setState({topicSelected: results})
   }
 
   render () {
