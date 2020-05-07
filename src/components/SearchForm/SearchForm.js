@@ -27,9 +27,13 @@ clearInput = () => {
 render() {
     return (
         <form>
+        <label for="search-input" >
+        Find articles by title or topic: 
+            </label>
             <input
+                id='search-input'
                 type='text'
-                placeholder='Search news articles'
+                placeholder='Search here'
                 name='searchInput'
                 value={this.state.search}
                 onChange={e => this.handleChange(e)}

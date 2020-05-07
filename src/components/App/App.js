@@ -49,7 +49,7 @@ class App extends Component {
         <Menu filterTopics={this.filterTopics} newsData={this.state.data} />
         <SearchForm searchNews={this.searchNews} />
         <NewsContainer news={this.state.topicSelected} />
-        {!this.results && <h3>No articles match your search. Try again!</h3>}
+        {/* {!this.results && <h3>No articles match your search. Select a topic or search again!</h3>} */}
       </main>
     );
   }
