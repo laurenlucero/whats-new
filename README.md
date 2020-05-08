@@ -13,4 +13,4 @@ This was a solo project for the third of four modules at Turing School of Softwa
 2. Run `npm install` then `npm start`
 3. Open localhost:3000 in your favorite browser (this may happen automatically)
 
-![app gif](https://giphy.com/gifs/LOWFX7wdm8ZzNmaM5z/html5)
+![app gif](https://media.giphy.com/media/LOWFX7wdm8ZzNmaM5z/giphy.gif)
